@@ -1,0 +1,55 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family:sans-serif;
+}
+html,body{height: 100%;}
+body{
+    background-image: url(/assets/facebook.jpg);
+    background-position: center;
+    background-size: cover;
+    /*background-image: linear-gradient(to right top, #00de25, #42e750, #62ef70, #7df78d, #97ffa8);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.719);
+    width: 500px;
+    height: 90%;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media (max-width:1000px){
+    form{
+        gap: 10px !important;
+        padding: 1%;
+        height: 95%;
+    }
+}
+label > input{
+    width: 100%;
+    height: 33px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.521);
+    background-color:unset;
+    font-size: 15px;
+}
+.box{
+    border: none;
+    height: 32px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    font-size: 15px;
+    font-weight: bolder;
+}
